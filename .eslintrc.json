@@ -1,10 +1,5 @@
 {
-    "extends": [
-        "airbnb",
-        "prettier",
-        "prettier/react",
-        "plugin:jsx-a11y/recommended"
-    ],
+    "extends": ["airbnb", "prettier", "plugin:jsx-a11y/recommended"],
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 8,
@@ -84,7 +79,8 @@
             {
                 "trailingComma": "none",
                 "singleQuote": false,
-                "printWidth": 100
+                "printWidth": 100,
+                "tabWidth": 4
             }
         ],
         "jsx-a11y/href-no-hash": "off",
