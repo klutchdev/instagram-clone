@@ -2736,14 +2736,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^12.1.10":
-  version: 12.7.3
-  resolution: "@testing-library/user-event@npm:12.7.3"
+"@testing-library/user-event@npm:12.8.1":
+  version: 12.8.1
+  resolution: "@testing-library/user-event@npm:12.8.1"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: 6e9526e58872b101063ac2350bfe36c1c4ec08752bb2e79c759ed75e70cca653bb413ee4f2d49e625da32d460108b7e0070a40042253f5f0e9333d25e27f65b7
+  checksum: 87d83dd3a403c998f2c659a028cdccb7f357ce9e35ee8d184a199273504e62d81a7d73e17d4a601623b45483c02a3f6d0f153f9ae0161b157851530c861cce6e
   languageName: node
   linkType: hard
 
@@ -5750,10 +5750,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-fns@npm:^2.17.0":
-  version: 2.17.0
-  resolution: "date-fns@npm:2.17.0"
-  checksum: 51ee9e264aac54d2a16471691d560838bad681f729573f520b03ec0c21f28904c73bf98ec2d33603e71bdabf8506140449c2b50d0db6fdd042faed9fe5467b92
+"date-fns@npm:2.19.0":
+  version: 2.19.0
+  resolution: "date-fns@npm:2.19.0"
+  checksum: 99ec34199c3a61cdb7fd27dcd68dd3c0c949ddfc34aa1daba9a6b2e0b5381bf42d8955d28ec2770f72eee429f5e7ab10fadba7b69108379d2545f003461d04f7
   languageName: node
   linkType: hard
 
@@ -7386,9 +7386,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase@npm:^8.2.9":
-  version: 8.2.9
-  resolution: "firebase@npm:8.2.9"
+"firebase@npm:8.2.10":
+  version: 8.2.10
+  resolution: "firebase@npm:8.2.10"
   dependencies:
     "@firebase/analytics": 0.6.4
     "@firebase/app": 0.6.15
@@ -7404,7 +7404,7 @@ __metadata:
     "@firebase/remote-config": 0.1.31
     "@firebase/storage": 0.4.3
     "@firebase/util": 0.3.4
-  checksum: bba5a355b6c041cce5d5a4b5b56c563df3ff38a50ff7451e1c24161ffb41fa31c8c73866347b19f75f4e420b356c51e2390221eb49ea27c27bc78e3bd03fc250
+  checksum: 4419296a925c9f11f8a2f94d832126a33a544c35cf992465c7d8948f268a241fafb74f5bc12b90ad965ef2bb124eb1600b42f41b6bbf7273721b22194e070be6
   languageName: node
   linkType: hard
 
@@ -8535,9 +8535,9 @@ fsevents@^1.2.7:
   dependencies:
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
-    "@testing-library/user-event": ^12.1.10
+    "@testing-library/user-event": 12.8.1
     babel-eslint: ^10.1.0
-    date-fns: ^2.17.0
+    date-fns: 2.19.0
     eslint: ^7.21.0
     eslint-config-airbnb: ^18.2.1
     eslint-config-prettier: ^8.1.0
@@ -8546,7 +8546,7 @@ fsevents@^1.2.7:
     eslint-plugin-prettier: ^3.3.1
     eslint-plugin-react: ^7.22.0
     eslint-plugin-react-hooks: ^4.2.0
-    firebase: ^8.2.9
+    firebase: 8.2.10
     prettier: ^2.2.1
     react: ^17.0.1
     react-dom: ^17.0.1
