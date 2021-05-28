@@ -8,7 +8,7 @@
         "@testing-library/user-event": "13.1.9",
         "autoprefixer": "^10.2.6",
         "date-fns": "2.22.0",
-        "firebase": "8.6.2",
+        "firebase": "8.6.3",
         "is-svg": "^4.3.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
