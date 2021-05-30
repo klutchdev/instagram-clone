@@ -12,9 +12,13 @@ export default function App() {
         <Router>
             <Suspense fallback={<p>Loading...</p>}>
                 <Switch>
-                    <Route path={Routes.DASHBOARD} component={Dashboard} />
-                    <Route path={Routes.LOGIN} component={Login} />
-                    <Route path={Routes.SIGN_UP} component={Signup} />
+                    <Route
+                        path={Routes.DASHBOARD}
+                        component={Dashboard}
+                        exact
+                    />
+                    <Route path={Routes.LOGIN} component={Login} exact />
+                    <Route path={Routes.SIGN_UP} component={Signup} exact />
                     <Route component={NotFound} />
                 </Switch>
             </Suspense>

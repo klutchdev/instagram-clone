@@ -1,5 +1,5 @@
 /* eslint-disable no-plusplus */
-export default function seedDatabase(firebase) {
+export default function seedDatabase(firebase: any) {
     const users = [
         {
             userId: "Sx3rxEFADqNdZeRz9C8grOzmB4f2",
