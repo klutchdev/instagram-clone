@@ -8573,6 +8573,7 @@ fsevents@^1.2.7:
     tailwindcss: "npm:@tailwindcss/postcss7-compat@^2.0.2"
     typescript: ^4.3.2
     web-vitals: ^1.1.2
+    ws: ^7.4.6
   languageName: unknown
   linkType: soft
 
@@ -16374,7 +16375,7 @@ typescript@^4.3.2:
   languageName: node
   linkType: hard
 
-"ws@npm:^7.4.5":
+"ws@npm:^7.4.5, ws@npm:^7.4.6":
   version: 7.4.6
   resolution: "ws@npm:7.4.6"
   peerDependencies:
