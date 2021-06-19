@@ -7047,7 +7047,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.27.0":
+"eslint@npm:^7.29.0":
   version: 7.29.0
   resolution: "eslint@npm:7.29.0"
   dependencies:
@@ -8721,7 +8721,7 @@ fsevents@^1.2.7:
     autoprefixer: ^9.8.6
     babel-eslint: ^10.1.0
     date-fns: ^2.22.1
-    eslint: ^7.27.0
+    eslint: ^7.29.0
     eslint-config-react-app: ^6.0.0
     firebase: ^8.6.8
     is-svg: ^4.3.1
