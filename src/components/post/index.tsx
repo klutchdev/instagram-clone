@@ -4,11 +4,9 @@ import Header from "./header";
 import Image from "./image";
 import Actions from "./actions";
 import Footer from "./footer";
+import Comments from "./comments";
 
-interface Comment {
-    displayName: string;
-    comment: string;
-}
+import { Comment } from "../../constants/types";
 
 interface PostProps {
     content: {
@@ -38,6 +36,12 @@ export default function Post({ content }: PostProps) {
                 handleFocus={handleFocus}
             />
             <Footer caption={content.caption} username={content.username} />
+            <Comments
+                docId={content.docId}
+                comments={content.comments}
+                posted={content.dateCreated}
+                commentInput={commentInput}
+            />
         </div>
     );
 }
