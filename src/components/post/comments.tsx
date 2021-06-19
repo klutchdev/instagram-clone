@@ -17,6 +17,7 @@ export default function Comments({
     posted,
     commentInput
 }: CommentProps) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [comments, setComments] = useState(allComments);
 
     return (
