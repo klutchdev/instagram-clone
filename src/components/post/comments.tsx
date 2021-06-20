@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { formatDistance } from "date-fns";
 
 import { Comment } from "../../constants/types";
+import AddComment from "./add-comment";
 
 interface CommentProps {
     docId: string;
@@ -17,7 +18,6 @@ export default function Comments({
     posted,
     commentInput
 }: CommentProps) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [comments, setComments] = useState(allComments);
 
     return (
@@ -45,6 +45,12 @@ export default function Comments({
                     {formatDistance(posted, new Date())} ago
                 </p>
             </div>
+            <AddComment
+                docId={docId}
+                comments={comments}
+                setComments={setComments}
+                commentInput={commentInput}
+            />
         </>
     );
 }
