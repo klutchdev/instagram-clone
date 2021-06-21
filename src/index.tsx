@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 import "./styles/tailwind.css";
 import ReactDOM from "react-dom";
 import App from "./App";

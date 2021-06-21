@@ -8,6 +8,7 @@
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "13.1.9",
         "date-fns": "^2.22.1",
+        "dotenv": "^10.0.0",
         "firebase": "^8.6.8",
         "is-svg": "^4.3.1",
         "react": "^17.0.2",
@@ -27,8 +28,7 @@
     },
     "eslintConfig": {
         "extends": [
-            "react-app",
-            "react-app/jest"
+            "react-app"
         ]
     },
     "browserslist": {
