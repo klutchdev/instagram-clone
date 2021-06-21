@@ -8730,6 +8730,7 @@ fsevents@^1.2.7:
     prop-types: ^15.7.2
     react: ^17.0.2
     react-dom: ^17.0.2
+    react-loader-spinner: ^4.0.0
     react-loading-skeleton: ^2.2.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
@@ -13284,6 +13285,18 @@ fsevents@^1.2.7:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 3eff23f410d40ab9bc5177f147a92c7f42c356a21ecea340e0554566956d67e5e1ba56f26cc7fa22339ac3c7151744177bd6305eaa26d3cbf15f354358c9d9b6
+  languageName: node
+  linkType: hard
+
+"react-loader-spinner@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "react-loader-spinner@npm:4.0.0"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  checksum: aa50ff4f419fa935519c27e7fa32cb2767c8f11f3a0f060432888f3798ecd8c9fee1398f303c43ab7c6201307ce250ac4f7b1d1714277a3135a28810d4675f63
   languageName: node
   linkType: hard
 
