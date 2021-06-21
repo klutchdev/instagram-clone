@@ -4,6 +4,8 @@ interface IsUserLoggedInProps {
     user: firebase.default.User;
     children: any;
     loggedInPath: string;
+    path?: string;
+    exact?: boolean;
 }
 
 export default function IsUserLoggedIn({

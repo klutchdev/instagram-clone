@@ -7,14 +7,11 @@ export default function Sidebar() {
 
     return (
         <div className="p-4">
-            <User
-                username={user.username as string}
-                fullName={user.fullName as string}
-            />
+            <User username={user?.username!} fullName={user?.fullName!} />
             <Suggestions
-                userId={user.userId as any}
-                following={user.following as string[]}
-                loggedInUserDocId={user.docId as string}
+                userId={user?.userId!}
+                following={user?.following!}
+                loggedInUserDocId={user?.docId!}
             />
         </div>
     );

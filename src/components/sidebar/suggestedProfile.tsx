@@ -22,7 +22,6 @@ export default function SuggestedProfile({
     suggestedProfileDocId,
     userId
 }: SuggestedProfileProps) {
-    // @ts-ignore
     const [followed, setFollowed] = useState(false);
 
     async function handleFollowUser() {
@@ -32,20 +31,20 @@ export default function SuggestedProfile({
     }
 
     return !followed ? (
-        <div className="flex flex-row items-center align-items justify-between">
+        <div className="flex flex-row items-center justify-between align-items">
             <div className="flex items-center justify-between">
                 <img
-                    className="rounded-full w-8 flex mr-3"
+                    className="flex w-8 mr-3 rounded-full"
                     src={`/images/avatars/${username}.jpg`}
                     alt=""
                 />
                 <Link to={`/p/${username}`}>
-                    <p className="font-bold text-sm">{username}</p>
+                    <p className="text-sm font-bold">{username}</p>
                 </Link>
             </div>
             <button
                 type="button"
-                className="text-xs font-bold text-blue-medium outline-none"
+                className="text-xs font-bold outline-none text-blue-medium"
                 onClick={handleFollowUser}
             >
                 Follow

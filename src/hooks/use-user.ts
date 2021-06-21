@@ -1,10 +1,12 @@
 import { useContext, useEffect, useState } from "react";
+import { User } from "../constants/types";
 
 import UserContext from "../context/user";
 import { getUserByUserId } from "../services/firebase";
 
-export default function useUser(): any {
-    const [activeUser, setActiveUser] = useState({});
+export default function useUser(): { user: User | null } {
+    const [activeUser, setActiveUser] = useState<User | null>(null);
+
     const user = useContext(UserContext);
 
     useEffect(() => {

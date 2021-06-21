@@ -6,19 +6,10 @@ import Actions from "./actions";
 import Footer from "./footer";
 import Comments from "./comments";
 
-import { Comment } from "../../constants/types";
+import { Photo as PostType } from "../../constants/types";
 
 interface PostProps {
-    content: {
-        username: string;
-        imageSrc: string;
-        caption: string;
-        docId: string;
-        userLikedPhoto: boolean;
-        likes: Array<any>;
-        comments: Array<Comment>;
-        dateCreated: number;
-    };
+    content: PostType;
 }
 
 export default function Post({ content }: PostProps) {

@@ -1,9 +1,10 @@
 import { useContext, useEffect, useState } from "react";
+import { Photo } from "../constants/types";
 import UserContext from "../context/user";
 import { getUserByUserId, getPhotos } from "../services/firebase";
 
-export default function usePhotos(): any {
-    const [photos, setPhotos] = useState<Array<any> | null>(null);
+export default function usePhotos(): { photos: Photo[] } {
+    const [photos, setPhotos] = useState<any>(null);
     const { uid: userId = "" } = useContext(UserContext)!;
 
     useEffect(() => {

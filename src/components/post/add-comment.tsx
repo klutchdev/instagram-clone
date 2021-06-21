@@ -7,7 +7,7 @@ import { FieldValue } from "../../lib/firebase";
 
 interface AddCommentProps {
     docId: string;
-    comments: Array<Comment>;
+    comments: Comment[];
     setComments: React.Dispatch<React.SetStateAction<Comment[]>>;
     commentInput: React.MutableRefObject<any>;
 }

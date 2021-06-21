@@ -4,6 +4,8 @@ import * as ROUTES from "../constants/routes";
 interface ProtectedRouteProps {
     user: firebase.default.User;
     children: any;
+    path?: string;
+    exact?: boolean;
 }
 
 export default function ProtectedRoute({

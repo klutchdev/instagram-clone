@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
+import { SuggestedProfiles, User } from "../../constants/types";
 
 import { getSuggestedProfiles } from "../../services/firebase";
 import SuggestedProfile from "./suggestedProfile";
@@ -15,12 +16,12 @@ export default function Suggestions({
     following,
     loggedInUserDocId
 }: SuggestionsProps) {
-    // @ts-ignore
-    const [profiles, setProfiles] = useState<any>(null);
+    const [profiles, setProfiles] = useState<SuggestedProfiles | null>(null);
 
     useEffect(() => {
         async function suggestedProfiles() {
             const response = await getSuggestedProfiles(userId, following);
+            console.log(response);
             setProfiles(response);
         }
 
@@ -30,12 +31,12 @@ export default function Suggestions({
     return !profiles ? (
         <Skeleton count={1} height={150} className="mt-5" />
     ) : profiles?.length > 0 ? (
-        <div className="rounded flex flex-col">
-            <div className="text-sm flex items-center align-items justify-between mb-2">
+        <div className="flex flex-col rounded">
+            <div className="flex items-center justify-between mb-2 text-sm align-items">
                 <p className="font-bold text-gray-base">Suggestions for you</p>
             </div>
-            <div className="mt-4 grid gap-5">
-                {profiles.map((profile: any) => (
+            <div className="grid gap-5 mt-4">
+                {profiles.map((profile: User) => (
                     <SuggestedProfile
                         key={profile.docId}
                         id={profile.docId}

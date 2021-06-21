@@ -23,7 +23,6 @@ export default function App() {
                     <Switch>
                         <ProtectedRoute
                             user={user!}
-                            // @ts-ignore
                             path={ROUTES.DASHBOARD}
                             exact
                         >
@@ -33,7 +32,6 @@ export default function App() {
                         <IsUserLoggedIn
                             user={user!}
                             loggedInPath={ROUTES.DASHBOARD}
-                            // @ts-ignore
                             path={ROUTES.LOGIN}
                             exact
                         >
@@ -45,7 +43,6 @@ export default function App() {
                         <IsUserLoggedIn
                             user={user!}
                             loggedInPath={ROUTES.DASHBOARD}
-                            // @ts-ignore
                             path={ROUTES.SIGN_UP}
                             exact
                         >
