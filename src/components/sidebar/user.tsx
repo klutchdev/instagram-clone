@@ -1,6 +1,7 @@
 import { memo } from "react";
 import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
+import { DEFAULT_IMAGE_PATH } from "../../constants/paths";
 
 interface UserProps {
     username: string;
@@ -17,13 +18,17 @@ const User = ({ username, fullName }: UserProps) =>
         >
             <div className="flex items-center justify-between col-span-1">
                 <img
-                    className="rounded-full w-16 flex mr-3"
+                    className="flex w-16 mr-3 rounded-full"
                     src={`/images/avatars/${username}.jpg`}
                     alt=""
+                    onError={(e) => {
+                        // @ts-ignore
+                        e.target.src = DEFAULT_IMAGE_PATH;
+                    }}
                 />
             </div>
             <div className="col-span-3">
-                <p className="font-bold text-sm">{username}</p>
+                <p className="text-sm font-bold">{username}</p>
                 <p className="text-sm">{fullName}</p>
             </div>
         </Link>

@@ -4,32 +4,33 @@ import { Link } from "react-router-dom";
 import FirebaseContext from "../context/firebase";
 import UserContext from "../context/user";
 import * as ROUTES from "../constants/routes";
+import { DEFAULT_IMAGE_PATH } from "../constants/paths";
 
 export default function Header() {
     const firebase = useContext(FirebaseContext);
     const user = useContext(UserContext) as firebase.default.User;
 
     return (
-        <header className="h-16 bg-white border-b border-gray-primary mb-8">
-            <div className="container mx-auto max-w-screen-lg h-full">
+        <header className="h-16 mb-8 bg-white border-b border-gray-primary">
+            <div className="container h-full max-w-screen-lg mx-auto">
                 <div className="flex justify-between h-full">
-                    <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
+                    <div className="flex items-center text-center text-gray-700 cursor-pointer align-items">
                         <h1 className="flex justify-center w-full">
                             <Link to={ROUTES.DASHBOARD}>
                                 <img
                                     src="/images/logo.png"
                                     alt="Instagram"
-                                    className="mt-2 w-6/12"
+                                    className="w-6/12 mt-2"
                                 />
                             </Link>
                         </h1>
                     </div>
-                    <div className="text-gray-700 text-center flex items-center align-items">
+                    <div className="flex items-center text-center text-gray-700 align-items">
                         {user ? (
                             <>
                                 <Link to={ROUTES.DASHBOARD}>
                                     <svg
-                                        className="w-8 mr-6 text-black-light cursor-pointer"
+                                        className="w-8 mr-6 cursor-pointer text-black-light"
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -55,7 +56,7 @@ export default function Header() {
                                     }}
                                 >
                                     <svg
-                                        className="w-8 mr-6 text-black-light cursor-pointer"
+                                        className="w-8 mr-6 cursor-pointer text-black-light"
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
                                         viewBox="0 0 24 24"
@@ -69,22 +70,29 @@ export default function Header() {
                                         />
                                     </svg>
                                 </button>
-                                <div className="flex items-center cursor-pointer">
-                                    <Link to={`/p/${user.displayName}`}>
-                                        <img
-                                            className="rounded-full h-8 w-8 flex"
-                                            src={`/images/avatars/${user.displayName}.jpg`}
-                                            alt={`${user.displayName} profile`}
-                                        ></img>
-                                    </Link>
-                                </div>
+                                {user && (
+                                    <div className="flex items-center cursor-pointer">
+                                        <Link to={`/p/${user.displayName}`}>
+                                            <img
+                                                className="flex w-8 h-8 rounded-full"
+                                                src={`/images/avatars/${user.displayName}.jpg`}
+                                                alt={`${user.displayName} profile`}
+                                                onError={(e) => {
+                                                    // @ts-ignore
+                                                    e.target.src =
+                                                        DEFAULT_IMAGE_PATH;
+                                                }}
+                                            ></img>
+                                        </Link>
+                                    </div>
+                                )}
                             </>
                         ) : (
                             <>
                                 <Link to={ROUTES.LOGIN}>
                                     <button
                                         type="button"
-                                        className="bg-blue-medium font-bold text-sm rounded text-white w-20 h-8"
+                                        className="w-20 h-8 text-sm font-bold text-white rounded bg-blue-medium"
                                     >
                                         Log In
                                     </button>
@@ -92,7 +100,7 @@ export default function Header() {
                                 <Link to={ROUTES.SIGN_UP}>
                                     <button
                                         type="button"
-                                        className="font-weight-700 text-sm rounded text-blue-medium w-20 h-8"
+                                        className="w-20 h-8 text-sm rounded font-weight-700 text-blue-medium"
                                     >
                                         Sign Up
                                     </button>
