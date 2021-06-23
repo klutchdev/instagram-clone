@@ -1,0 +1,12 @@
+{
+    "extends": ["config:base"],
+    "rangeStrategy": "bump",
+    "packageRules": [
+        {
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "automerge": true
+        }
+    ],
+    "commitMessagePrefix": "⬆️",
+    "commitMessageTopic": "{{depname}}"
+}
