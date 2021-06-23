@@ -8733,7 +8733,7 @@ fsevents@^1.2.7:
     eslint-config-react-app: ^6.0.0
     firebase: ^8.6.8
     is-svg: ^4.3.1
-    postcss: ^7.0.35
+    postcss: ^7.0.36
     prettier: ^2.3.1
     prop-types: ^15.7.2
     react: ^17.0.2
@@ -12802,7 +12802,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:^7.0.35":
+"postcss@npm:^7.0.36":
   version: 7.0.36
   resolution: "postcss@npm:7.0.36"
   dependencies:
