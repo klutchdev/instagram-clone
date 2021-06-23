@@ -9,5 +9,6 @@
     ],
     "commitMessagePrefix": "⬆️",
     "prConcurrentLimit": 0,
-    "prHourlyLimit": 0
+    "prHourlyLimit": 0,
+    "dependencyDashboard": true
 }
