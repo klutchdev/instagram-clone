@@ -1,6 +1,6 @@
 {
     "extends": ["config:base"],
-    "rangeStrategy": "auto",
+    "rangeStrategy": "bump",
     "packageRules": [
         {
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
