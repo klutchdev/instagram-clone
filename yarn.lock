@@ -8869,7 +8869,7 @@ fsevents@^1.2.7:
     react-loading-skeleton: ^2.2.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
-    tailwindcss: "npm:@tailwindcss/postcss7-compat@^2.2.5"
+    tailwindcss: "npm:@tailwindcss/postcss7-compat@^2.2.6"
     typescript: ^4.3.5
     web-vitals: ^2.1.0
     ws: ^7.5.3
@@ -15277,9 +15277,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:@tailwindcss/postcss7-compat@^2.2.5":
-  version: 2.2.5
-  resolution: "@tailwindcss/postcss7-compat@npm:2.2.5"
+"tailwindcss@npm:@tailwindcss/postcss7-compat@^2.2.6":
+  version: 2.2.6
+  resolution: "@tailwindcss/postcss7-compat@npm:2.2.6"
   dependencies:
     arg: ^5.0.0
     autoprefixer: ^9
@@ -15318,7 +15318,7 @@ resolve@^2.0.0-next.3:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: f8f35811e1e585d4bc3278bf11c9f53826ae781036feea7ee03e2b88ad3252291e61c33ff27d54a6bcaba5ca20d006e49fd401c6a249862d6eac4073433a2b0d
+  checksum: 205e9f191d98f9ff437826de9698c9853f8663290c05537a9bb870b0b98e0fc88dd6fe2f6f0b25383ac8e5b51d0ee809daf841045c25791f5be5d264618c17f9
   languageName: node
   linkType: hard
 
